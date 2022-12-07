@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vanilla Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form class="search-form" id="search-form">
+            <div class="row">
+                <div class="col-6">
+                    <input type="serch" placeholder="Search for City" autocomplete="off" autofocus="on"
+                        id="serch-text-input" class="form-control shadow-l" />
+                </div>
+                <div class="col-3">
+                    <input type="submit" value: "Search" class="form-control btn btn-primary shadow-sm w-100" />
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-success w-100"> Current
+                    </button>
+                </div>
+            </div>
+        </form>
+        <h2 id="city"></h2>
+        <h3></h3>
+
+        <h5 id="description"></h5>
+        <div><span class="temperature" id="temperature"></span><span class="units"> °C </span></div>
+        <div class="chart">
+            <ul class="list-group list-group-horizontal-sm">
+                <li class="list-group-item">Sun</li>
+                <li class="list-group-item">☀️<br /><small>Min/Max</small></li>
+            </ul>
+            <ul class="list-group list-group-horizontal-sm">
+                <li class="list-group-item">Mon</li>
+                <li class="list-group-item">⛅<br /><small>Min/Max</small></li>
+            </ul>
+
+            <ul class="list-group list-group-horizontal-md">
+                <li class="list-group-item">Tue</li>
+                <li class="list-group-item">☀️<br /><small>Min/Max</small></li>
+            </ul>
+            <ul class="list-group list-group-horizontal-md">
+                <li class="list-group-item">Wed</li>
+                <li class="list-group-item">⛅<br /><small>Min/Max</small></li>
+            </ul>
+            <ul class="list-group list-group-horizontal-sm">
+                <li class="list-group-item">Thu</li>
+                <li class="list-group-item">🌧️ <br /><small>Min/Max</small></li>
+            </ul>
+            <ul class="list-group list-group-horizontal-sm">
+                <li class="list-group-item">Fri</li>
+                <li class="list-group-item">☀️ <br /><small>Min/Max</small></li>
+            </ul>
+            <ul class="list-group list-group-horizontal-sm">
+                <li class="list-group-item">Sat</li>
+                <li class="list-group-item">☀️<br /><small>Min/Max</small></li>
+            </ul>
+            <ul class="list-group list-group-horizontal-sm">
+                <li class="list-group-item">Sun</li>
+                <li class="list-group-item">⛅<br /><small>Min/Max</small></li>
+            </ul>
+        </div>
+        <p class=parametrs">Humidity: <span id="humidity">77</span>%</p>
+        <p class="parametrs">Wind: <span id="wind">5</span>km/h</p>
+    </div>
+    <script src="src/week4.js"></script>
+</body>
+
+</html>
