@@ -1,0 +1,28 @@
+div.container {
+    background-color: #8ec9f9;
+    padding: 20px 20px;
+    min-height: 150px;
+    width: 500px;
+}
+
+h2 {
+    padding-top: 20px;
+}
+
+li {
+    position: fixed;
+    right: 200px;
+    width: 100px;
+
+    text-align: center;
+}
+
+.chart {
+    position: relative;
+    right: -450px;
+    top: 5px;
+}
+
+.parameters {
+    text-align: center;
+}
